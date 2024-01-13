@@ -7,7 +7,7 @@ This PL/SQL script automates the generation of installment records for contracts
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Video Explanation](#Video Explanation)
 
 ## Features
 
