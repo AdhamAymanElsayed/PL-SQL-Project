@@ -7,7 +7,7 @@ This PL/SQL script automates the generation of installment records for contracts
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Video Explanation](#Video Explanation)
+- [Explanation](#Explanation)
 
 ## Features
 
@@ -33,4 +33,5 @@ Before using this script with TOAD for Oracle, ensure the following:
 4. Copy and paste the script into the SQL Editor.
 5. Execute the script.
 
-## Video Explanation
+## Explanation
+Video Explanation Link : [Link](#[features](https://drive.google.com/file/d/1jEO_8sh8dZcDLXZNPn2e22GX9gOGoqvs/view?usp=drive_link)https://drive.google.com/file/d/1jEO_8sh8dZcDLXZNPn2e22GX9gOGoqvs/view?usp=drive_link)
