@@ -34,4 +34,4 @@ Before using this script with TOAD for Oracle, ensure the following:
 5. Execute the script.
 
 ## Explanation
-Video Explanation Link : [Link](#[features](https://drive.google.com/file/d/1jEO_8sh8dZcDLXZNPn2e22GX9gOGoqvs/view?usp=drive_link)https://drive.google.com/file/d/1jEO_8sh8dZcDLXZNPn2e22GX9gOGoqvs/view?usp=drive_link)
+Video Explanation Link : [Link](#(https://drive.google.com/file/d/1jEO_8sh8dZcDLXZNPn2e22GX9gOGoqvs/view?usp=drive_link)https://drive.google.com/file/d/1jEO_8sh8dZcDLXZNPn2e22GX9gOGoqvs/view?usp=drive_link)
