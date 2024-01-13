@@ -5,8 +5,8 @@ select *
 from contracts;
 v_cont_dur number(3) ;
 v_cont_inst number(4) ;
-v_cont_pur CONTRACTS.CONTRACT_TOTAL_FEES%type;
-v_inst number (8,2) ; 
+v_cont_fees CONTRACTS.CONTRACT_TOTAL_FEES%type;
+v_fees_inst number (8,2) ; 
 v_inst_date contracts.CONTRACT_STARTDATE%type;
 
 begin
@@ -23,8 +23,8 @@ For v_cont_record in cont_cursor Loop
     v_cont_inst := v_cont_dur * 2 ;
     end if ;
 
-    v_cont_pur :=  v_cont_record.CONTRACT_TOTAL_FEES - nvl(v_cont_record.CONTRACT_DEPOSIT_FEES , 0) ;
-    v_inst := v_cont_pur / v_cont_inst ;
+    v_cont_fees :=  v_cont_record.CONTRACT_TOTAL_FEES - nvl(v_cont_record.CONTRACT_DEPOSIT_FEES , 0) ;
+    v_fees_inst := v_cont_fees / v_cont_inst ;
     v_inst_date :=  v_cont_record.CONTRACT_STARTDATE ;
    
     for i in 1 .. v_cont_inst loop
@@ -41,7 +41,7 @@ For v_cont_record in cont_cursor Loop
        insert into INSTALLMENTS_PAID
                 (INSTALLMENT_ID ,CONTRACT_ID , INSTALLMENT_DATE , INSTALLMENT_AMOUNT , PAID )
         VALUES
-                 (INSTALLMENTS_PAID_SEQ.nextval ,  v_cont_record.contract_id ,v_inst_date ,v_inst,0) ;
+                 (INSTALLMENTS_PAID_SEQ.nextval ,  v_cont_record.contract_id ,v_inst_date ,v_fees_inst,0) ;
          
     end loop ;
 end loop;
