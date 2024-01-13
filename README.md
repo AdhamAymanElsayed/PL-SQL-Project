@@ -33,6 +33,4 @@ Before using this script with TOAD for Oracle, ensure the following:
 4. Copy and paste the script into the SQL Editor.
 5. Execute the script.
 
-```sql
-set serveroutput on;
--- Your PL/SQL script here
+## Video Explanation
